@@ -1,50 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+:root {
+    --main-bg-color: #E9E9E9;
+    --primary-text-color: #424242;
+    --accent-color: #FF3F3C;
+    --dark-accent-color: #ce302e;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
+    background: var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
+header {
+    padding: 40px;
+    margin-bottom: 100px;
+}
+
+header h1 {
     margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 25px;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+main {
+    background: url('/images/Polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+.hero {
+    text-align: center;
+    min-height: 800px;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero h2 {
+    font-size: 9em;
+    font-weight: 900;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: -1px;
 }
 
-img.about {
-    opacity: 0.5;
+.details h3 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1em;
+    margin: 60px 0 40px 0;
+    letter-spacing: 0px;
+}
+
+.details p {
+    max-width: 750px;
+    font-size: 23px;
+    margin: 0 auto;
+}
+
+.details ul {
+    max-width: 800px;
+    padding-left: 130px;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0 0 0 60px;
+    font-size: 23px;
+}
+
+.details ul li.wifi {
+    background: url('/images/wifi.svg') no-repeat center left;
+    background-size: contain;
+}
+
+.details ul li.cloud {
+    background: url('/images/cloud.svg') no-repeat center left;
+    background-size: contain;
+}
+
+.details ul li.qr {
+    background: url('/images/qrcode.svg') no-repeat center left;
+    background-size: contain;
+    margin-left: 4px;
+    padding: 0 0 0 56px;
+}
+
+.details ul li.film {
+    background: url('/images/photo-film.svg') no-repeat center left;
+    background-size: contain;
+}
+
+form {
+    width: 750px;
+    height: 130px;
+    background: linear-gradient(#E2E2E2, #D6D7D6);
+    border-radius: 25px;
+    margin: 0 auto 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    height: 70px;
+    width: 460px;
+    padding: 0 0 0 20px;
+    border: 0;
+    margin-right: 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+.button {
+    height: 70px;
+    width: 180px;
+    padding: 0;
+    border: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.button:active {
+    background-color: var(--dark-accent-color);
 }
